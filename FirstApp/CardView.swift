@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct CardView: View {
-    // Mark - Properties
-    
+    // MARK: - Properties
+    var card: Card
     var gardient: [Color] = [Color("Color01"), Color("Color02")]
 
-    // Mark - Body
+    // MARK: -Body
     var body: some View {
         ZStack {
             
-            Image("Zemise01")
+            Image(card.imageName)
             
             VStack {
-                Text ("SwiftUI")
+                Text (card.title)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                Text("如此美妙 不同凡响")
+                Text(card.headline)
                     .fontWeight(.light)
                     .foregroundColor(.white)
                     .italic()
@@ -35,7 +35,7 @@ struct CardView: View {
             Button(action: {
                 print("按钮被用户点击")
             }){
-                Text("技术总监")
+                Text(card.callToAction)
                     .font(.system(size: 30))
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
@@ -48,7 +48,8 @@ struct CardView: View {
             } // HStack
             .padding(.vertical)
             .padding(.horizontal, 24)
-            .background(LinearGradient(gradient:Gradient(colors: gardient),
+            .background(LinearGradient(gradient:Gradient(colors: card.gradientColors),
+                       // 从左到右渐变
                         startPoint: .leading,
                         endPoint: .trailing))
             .clipShape(Capsule())
@@ -62,7 +63,7 @@ struct CardView: View {
         .cornerRadius(16)
         .shadow(radius: 8)
         // 渐变色背景    颜色数组、起点、中点
-        .background(LinearGradient(gradient:Gradient(colors: gardient),
+        .background(LinearGradient(gradient:Gradient(colors: card.gradientColors),
                     startPoint: .top,
                     endPoint: .bottom))
     }
@@ -72,7 +73,7 @@ struct CardView: View {
 // Mark - Preview
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(card: cardData[1])
             .previewLayout(.sizeThatFits)
     }
 }

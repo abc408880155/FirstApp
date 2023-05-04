@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA611182A03D7AD00C9B0E5 /* ScrollCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */; };
+		ECA6111A2A03DBE200C9B0E5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA611192A03DBE200C9B0E5 /* CardModel.swift */; };
+		ECA6111C2A04203600C9B0E5 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6111B2A04203600C9B0E5 /* CardData.swift */; };
 		ECFAB1532A0298FC004E2980 /* FirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAB1522A0298FC004E2980 /* FirstAppApp.swift */; };
 		ECFAB1552A0298FC004E2980 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFAB1542A0298FC004E2980 /* ContentView.swift */; };
 		ECFAB1572A0298FC004E2980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFAB1562A0298FC004E2980 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCardView.swift; sourceTree = "<group>"; };
+		ECA611192A03DBE200C9B0E5 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		ECA6111B2A04203600C9B0E5 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		ECFAB14F2A0298FC004E2980 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFAB1522A0298FC004E2980 /* FirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppApp.swift; sourceTree = "<group>"; };
 		ECFAB1542A0298FC004E2980 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				ECFAB1582A0298FC004E2980 /* FirstApp.entitlements */,
 				ECFAB1592A0298FC004E2980 /* Preview Content */,
 				ECFAB1992A02A2DE004E2980 /* CardView.swift */,
+				ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */,
+				ECA611192A03DBE200C9B0E5 /* CardModel.swift */,
+				ECA6111B2A04203600C9B0E5 /* CardData.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -143,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFAB1552A0298FC004E2980 /* ContentView.swift in Sources */,
+				ECA611182A03D7AD00C9B0E5 /* ScrollCardView.swift in Sources */,
 				ECFAB19A2A02A2DE004E2980 /* CardView.swift in Sources */,
+				ECA6111C2A04203600C9B0E5 /* CardData.swift in Sources */,
 				ECFAB1532A0298FC004E2980 /* FirstAppApp.swift in Sources */,
+				ECA6111A2A03DBE200C9B0E5 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +196,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -242,6 +255,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -268,6 +282,7 @@
 				CODE_SIGN_ENTITLEMENTS = FirstApp/FirstApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstApp/Preview Content\"";
 				DEVELOPMENT_TEAM = NP4C4J4AJC;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -306,6 +321,7 @@
 				CODE_SIGN_ENTITLEMENTS = FirstApp/FirstApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstApp/Preview Content\"";
 				DEVELOPMENT_TEAM = NP4C4J4AJC;
 				ENABLE_HARDENED_RUNTIME = YES;
