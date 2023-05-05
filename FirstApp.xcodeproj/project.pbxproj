@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3A18242A04FA0C00BC4F7C /* audioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A18232A04FA0C00BC4F7C /* audioPlayer.swift */; };
+		EC3A18262A04FDDB00BC4F7C /* 晚安喵.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC3A18252A04FDDB00BC4F7C /* 晚安喵.mp3 */; };
 		ECA611182A03D7AD00C9B0E5 /* ScrollCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */; };
 		ECA6111A2A03DBE200C9B0E5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA611192A03DBE200C9B0E5 /* CardModel.swift */; };
 		ECA6111C2A04203600C9B0E5 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6111B2A04203600C9B0E5 /* CardData.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3A18232A04FA0C00BC4F7C /* audioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioPlayer.swift; sourceTree = "<group>"; };
+		EC3A18252A04FDDB00BC4F7C /* 晚安喵.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "晚安喵.mp3"; sourceTree = "<group>"; };
 		ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCardView.swift; sourceTree = "<group>"; };
 		ECA611192A03DBE200C9B0E5 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		ECA6111B2A04203600C9B0E5 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				ECFAB1592A0298FC004E2980 /* Preview Content */,
 				ECFAB1992A02A2DE004E2980 /* CardView.swift */,
 				ECA611172A03D7AD00C9B0E5 /* ScrollCardView.swift */,
+				EC3A18232A04FA0C00BC4F7C /* audioPlayer.swift */,
+				EC3A18252A04FDDB00BC4F7C /* 晚安喵.mp3 */,
 				ECA611192A03DBE200C9B0E5 /* CardModel.swift */,
 				ECA6111B2A04203600C9B0E5 /* CardData.swift */,
 			);
@@ -140,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFAB15B2A0298FC004E2980 /* Preview Assets.xcassets in Resources */,
+				EC3A18262A04FDDB00BC4F7C /* 晚安喵.mp3 in Resources */,
 				ECFAB1572A0298FC004E2980 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFAB1552A0298FC004E2980 /* ContentView.swift in Sources */,
+				EC3A18242A04FA0C00BC4F7C /* audioPlayer.swift in Sources */,
 				ECA611182A03D7AD00C9B0E5 /* ScrollCardView.swift in Sources */,
 				ECFAB19A2A02A2DE004E2980 /* CardView.swift in Sources */,
 				ECA6111C2A04203600C9B0E5 /* CardData.swift in Sources */,

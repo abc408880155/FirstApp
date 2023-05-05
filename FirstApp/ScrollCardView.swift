@@ -10,6 +10,7 @@ import SwiftUI
 struct ScrollCardView: View {
     // MARK: - properties
     // var card: Card
+    let cards: [Card] = cardData
     
     // MARK: -body
     var body: some View {
@@ -18,8 +19,8 @@ struct ScrollCardView: View {
             // 中心对齐，横向间隔20
             HStack(alignment: .center, spacing: 20){
                 // 利用循环生成多个卡片CardView卡片视图
-                ForEach(0 ..< 2) { item in
-                    CardView(card: cardData[item])
+                ForEach(cards) { item in
+                    CardView(card: item)
                 } //: Loop
                 
             } // : HStack
